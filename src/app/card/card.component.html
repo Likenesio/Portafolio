@@ -1,0 +1,19 @@
+
+<div class="card"> 
+<p-card [header]="content.title" [style]="{width: '360px', background: '#ebcf95'}" styleClass="p-card-shadow">
+    <ng-template pTemplate="header">
+
+    <img alt="Card" src="https://www.primefaces.org/primeng/assets/showcase/images/usercard.png">
+        
+
+    </ng-template>
+    
+    <img alt="Card" [src]="content.img" class="logo" >
+    
+    <p><i>{{content.date}}</i></p>
+    
+    
+    <p>{{content.Text}}</p>
+
+</p-card>
+</div>
