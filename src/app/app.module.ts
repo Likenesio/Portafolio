@@ -10,13 +10,15 @@ import { NavbarComponent } from './navbar/navbar.component';
 import {CardModule} from 'primeng/card';
 import { PresentacionComponent } from './presentacion/presentacion.component';
 import {ProgressSpinnerModule} from 'primeng/progressspinner';
+import { ExperienciaComponent } from './experiencia/experiencia.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     CardComponent,
-    PresentacionComponent
+    PresentacionComponent,
+    ExperienciaComponent
   ],
   imports: [
     BrowserModule,

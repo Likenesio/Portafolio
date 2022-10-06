@@ -23,3 +23,12 @@
     height: '100%';
     background-color: rgb(255, 255, 255, .2);
   }
+  .icon{
+    margin-left: 80px;
+    margin-top: 10px;
+    
+  }
+
+  .iconper{
+    margin-left: 20px;
+  }

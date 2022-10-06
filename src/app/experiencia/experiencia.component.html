@@ -1,0 +1,12 @@
+<div class="card-c">
+  <div>
+    <div class="txt">
+      <h2 style="margin-left: 15px ;">Experiencia laboral</h2>
+    </div>
+    <ng-container *ngFor="let item of experience">
+      <div>
+        <app-card [content]="item"></app-card>
+      </div>
+    </ng-container>
+  </div>
+</div>
