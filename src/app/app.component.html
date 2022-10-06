@@ -1,12 +1,20 @@
 <app-navbar></app-navbar>
 
-<app-presentacion *ngIf="!loading" ></app-presentacion>
+<app-presentacion *ngIf="!loading"></app-presentacion>
+<app-experiencia *ngIf="!loading"></app-experiencia>
 
 <div class="presentation card-p" *ngIf="!loading">
-    <ng-container *ngFor="let item of content">
-        <app-card [content]="item" class="style"></app-card>
-    </ng-container>
+  <ng-container *ngFor="let item of content">
+    <app-card [content]="item" class="style"></app-card>
+  </ng-container>
 </div>
 <div class="spinner">
-    <p-progressSpinner *ngIf="loading" [style]="{width: '100px', height: '100px'}" styleClass="custom-spinner" strokeWidth="8" fill="var(--surface-ground)" animationDuration=".5s"></p-progressSpinner>
+  <p-progressSpinner
+    *ngIf="loading"
+    [style]="{ width: '100px', height: '100px' }"
+    styleClass="custom-spinner"
+    strokeWidth="8"
+    fill="var(--surface-ground)"
+    animationDuration=".5s"
+  ></p-progressSpinner>
 </div>
